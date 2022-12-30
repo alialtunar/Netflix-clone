@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="html1.css" />
+
+    <title>Document</title>
+    <style>
+      .p-5 {
+        padding: 0px !important;
+      }
+      @media screen and (max-width: 1200px) and (min-width: 800px) {
+        .columnx {
+          width: 50%;
+        }
+        .column1 {
+          width: 50%;
+        }
+        .space {
+          height: 70px;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        .columnx {
+          width: 25%;
+        }
+        .column1 {
+          width: 25%;
+        }
+        .space {
+          height: 70px;
+        }
+      }
+      @media screen and (min-width: 500px) and (max-width: 800px) {
+        .columnx {
+          width: 75%;
+        }
+        .column1 {
+          width: 75%;
+        }
+        .space {
+          height: 70px;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .columnx {
+          width: 75%;
+        }
+        .column1 {
+          width: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-danger navbar-expand-sm w-100">
+        <ul class="navbar-nav w-75">
+          <li class="nav-item">
+            <a href="#">
+              <img
+                src="9ea90c0579964d452431dba3e0071a1a-removebg-preview (1).png"
+            /></a>
+          </li>
+        </ul>
+        <ul
+          class="navbar-nav w-25"
+          style="justify-content: center; opacity: 0.7"
+        >
+          <li>
+            <a href="#"><h3>Oturum ac</h3></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <div class="simpleContainer p-5 w-100 mx-auto mt-5" style="height: auto">
+      <div class="go mt-2 w-100 mx-auto text-start" style="height: auto">
+        <div class="columnx mx-auto">
+          <span class="right"><h5>Adım 1/3</h5></span>
+        </div>
+        <div class="columnx mx-auto">
+          <h2 style="color: black">Hesabınızı oluşturalım</h2>
+        </div>
+        <div class="columnx mx-auto">
+          <span class="right"
+            ><p>
+              Sadece birkaç adım daha kaldı, sonra bitiyor! Biz de formaliteyi
+              hiç sevmiyoruz.
+            </p></span
+          >
+        </div>
+        <div class="columnx mx-auto">
+          <h2 style="color: black">
+            Üyeliğinizi başlatmak için bir parola oluşturun
+          </h2>
+        </div>
+        <div class="column1 mx-auto">
+          <form>
+            <div class="mb-2">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="E-posta"
+                style="height: 50px; border-radius: 0px"
+                name="uname"
+                required=""
+              />
+
+              <div class="invalid-feedback">
+                Lütfen E-mail adresiniz yazınız.
+              </div>
+            </div>
+            <div class="mb-2">
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Bir parola ekleyin"
+                style="height: 50px; border-radius: 0px"
+                name="pswd"
+                required=""
+              />
+
+              <div class="invalid-feedback">Lütfen Bir parola ekleyiniz.</div>
+            </div>
+            <div class="mb-2 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                style="border-radius: 0px"
+                id="exampleCheck1"
+              />
+              <label
+                class="form-check-label"
+                for="exampleCheck1"
+                style="color: black"
+                >Netflik Özel Teklifleri e-posta ile gönderilmesin</label
+              >
+            </div>
+          </form>
+        </div>
+        <div class="column1 mx-auto">
+          <button
+            type="submit"
+            class="btn btn-danger w-100 mx-auto"
+            style="border-radius: 0px"
+            onclick="kontrol()"
+          >
+          <a style="text-decoration: none; color: white;" href="users3.html"> <h3 class="mt-2">İleri</h3></a> 
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="row" style="margin-top: 150px">
+      <div class="site-footer col-12">
+        <div class="footer-top">
+          <span
+            >Sorularınız mı var? <a href="#"> 0539 413 5976 </a> telefonunu
+            arayın.
+          </span>
+        </div>
+        <ul class="row">
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">SSS</a>
+          </li>
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">Yardım Merkezi</a>
+          </li>
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">Kullanım Koşulları</a>
+          </li>
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">Gizlilik</a>
+          </li>
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">Cerez tercihleri</a>
+          </li>
+          <li class="footer-link-item col-sm-6">
+            <a href="#" class="footer-link">Kurumsal Bilgiler</a>
+          </li>
+        </ul>
+        <div class="selection-container" style="margin-bottom: 30px">
+          <div class="select">
+            <i class="fa-solid fa-globe"></i>
+            <select class="form-select" aria-label="Default select example">
+              <option selected="">İngilizce</option>
+              <option selected="">Türkçe</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function kontrol() {
+        var form = document.getElementsByTagName("form");
+        form[0].className = "was-validated";
+      }
+    </script>
+  </body>
+</html>
